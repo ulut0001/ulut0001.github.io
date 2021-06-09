@@ -1,0 +1,36 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+header, footer {
+    background-color: #fdf1d9
+}
+.site-title {
+    color: darkslategrey;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px;
+}
+
+h3~ul li {
+    list-style: square;
+}
+
+h3~ul li:nth-child(odd) {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+a {
+    text-decoration: none;
+    background-color: rosybrown;
+    border: 1px solid black;
+}
+
+a:hover, a:focus {
+    background-color: black;
+    color: rosybrown;
+    border: 1px solid rosybrown;
+    box-shadow: 0 0 4px 2px;
+}
