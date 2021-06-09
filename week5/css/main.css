@@ -1,0 +1,36 @@
+/* this is for comments */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslategray;
+}
+
+h1 {
+    color: peru;
+}
+
+p {
+    background-color: lightblue;
+}
+
+h1, h2, h3, h4 {
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+}
+
+#recipe {
+    background-color: orange;
+}
+
+.orange-link {
+    background-color: darkslategray;
+    color: orange;
+    text-decoration: none;
+}
+
+.largetext {
+    font-size: 20px;
+}
