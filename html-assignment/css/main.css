@@ -6,6 +6,7 @@ body {
 header, footer {
     background-color: #fdf1d9
 }
+
 .site-title {
     color: darkslategrey;
 }
@@ -22,13 +23,13 @@ h3~ul li:nth-child(odd) {
     background-color: rgba(0, 0, 0, .3);
 }
 
-a {
+a.navlink {
     text-decoration: none;
     background-color: rosybrown;
     border: 1px solid black;
 }
 
-a:hover, a:focus {
+a.navlink:hover, a.navlink:focus {
     background-color: black;
     color: rosybrown;
     border: 1px solid rosybrown;
