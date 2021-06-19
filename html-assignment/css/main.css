@@ -23,13 +23,13 @@ h3~ul li:nth-child(odd) {
     background-color: rgba(0, 0, 0, .3);
 }
 
-a.navlink {
+.navheader {
     text-decoration: none;
     background-color: rosybrown;
     border: 1px solid black;
 }
 
-a.navlink:hover, a.navlink:focus {
+.navheader:hover, .navheader:focus {
     background-color: black;
     color: rosybrown;
     border: 1px solid rosybrown;
