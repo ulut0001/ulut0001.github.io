@@ -2,43 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>Lone Starfish</title>
 </head>
 <body>
     <section id="mainsection">
+        <!-- Uses header section as container for main image div and navigation menu -->
         <header>
-            <h1 id="overimage">Lone Starfish</h1>
-            <img src="images/lone-starfish-wide.jpg" alt="lone starfish" class="mainimage">
+            <!-- DivBox for main image and over image title -->
+            <div class="mainimagebox">
+                <h1 id="overimage">Lone Starfish</h1>
+                <img src="images/lone-starfish-wide.jpg" alt="lone starfish" class="mainimage">
+            </div>
             <div id="navmenu">
-                <ul>
-                    <li><a href="home.html" class="navlink">Home</a></li>
-                    <li><a href="story.html" class="navlink">Story</a></li>
-                    <li><a href="contact.html" class="navlink">Contact</a></li>
+                <ul id="navul">
+                    <li><a href="#mainsection" class="navlink">Home</a></li>
+                    <li><a href="#articleheading" class="navlink">Story</a></li>
+                    <li><a href="#formbox" class="navlink">Contact</a></li>
                 </ul>
             </div>
         </header>
+        <!-- Article contains article heading, image, information text and list -->
         <article>
             <div>
                 <h2 id="articleheading">Life of a Starfish</h2>
                 <img src="images/lone-starfish.jpg" alt="starfish thumb" class="paragraphimage">
+                <!-- Entity code for colon, semicolon, quotation mark has entered -->
                 <p class="longinfo">
-                    Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
+                    Swallower catla Black angelfish grunter striped bass scissor-tail rasbora&#59; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, &#34;french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder.&#34; Gibberfish tui chub mooneye smoothtongue&#59; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish&#58; plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito&#59; northern anchovy. Waryfish, &#34;lionfish&#59; longfin smelt&#59; leopard danio dragonfish,&#34; Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver&#58; ghost pipefish ide armoured catfish halibut. Torpedo&#59; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
                 </p>
             </div>
             <div>
                 <h3 id="listheader">Facts about Starfish</h3>
                 <!-- -->
                 <ul>
-                    <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
-                    <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
-                    <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy</li>
-                    <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+                    <li>Australian herring barbel Mexican golden trout, killifish bonito&#59; northern anchovy. </li>
+                    <li>Waryfish, &#34;lionfish&#59; longfin smelt&#59; leopard danio dragonfish,&#34; Lost River sucker, mojarra.</li>
+                    <li>Herring barbel Mexican golden trout, killifish bonito&#59; northern anchovy</li>
+                    <li>Waryfish, &#34;lionfish&#59; longfin smelt&#59; leopard danio dragonfish,&#34; Lost River sucker, mojarra.</li>
                 </ul>
             </div>
         </article>
+        <!-- formbox div for contact, form and buttons -->
         <div id="formbox">
             <h2 id="contactheading">Contact to learn more...</h2>
             <form action="contact.html" method="GET">
@@ -65,10 +70,11 @@
                 </div>
                 <div>
                     <button type="submit" class="formbutton">Submit</button>
-                    <button type="reset" class="formbutton">Reset</button>
+                    <button type="reset" class="formbutton" id="resetbutton">Reset</button>
                 </div>
             </form>
         </div>
+        <!-- Footer only for Copyright text -->
         <footer>
             <h5 id="copyright">
                 &copy; Lone Starfish

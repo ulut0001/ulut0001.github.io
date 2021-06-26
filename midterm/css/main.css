@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -49,102 +49,126 @@ table {
 
 /* End of CSS Reset Code */
 
+/* Starts midterm specific css */
+
+:root {
+	font-size: clamp(6px, 1vw, 14px);
+}
 body {
 	background-color: cadetblue;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 3rem;
 	font-weight: 700;
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 2rem;
 	font-weight: 600;
 }
 
-h3 {
-	font-size: 18px;
+h3, .navlink {
+	font-size: 1.5rem;
 	font-weight: 600;
 }
 
 h4 {
-	font-size: 14px;
+	font-size: 1.2rem;
 	font-weight: 500;
 }
 
-h5, p, a, li, .formtitle {
-	font-size: 12px;
+h5, p, li, .formtitle, #textbox, .formbutton, #resetbutton, input {
+	font-size: 1rem;
 	font-weight: normal;
 }
 
 /* The section for main box, max width is equal to 1920*0,6 */
 #mainsection {
+	position: relative;
 	background-color: #aad4cf;
 	width: 60%;
 	max-width: 1152px;
-	margin-left: 20%;
-	position: absolute;
+	margin: 0 auto;
 }
 
 .mainimage {
 	width: 100%;
 }
 
-#articleheading {
-	margin-left: 2%;
+.mainimagebox {
+	width: 100%;
+	position: relative;
 }
+
 
 #overimage {
 	position: absolute;
-	margin-top: 25%;
-	margin-left: 37%;
+	width: 100%;
+	bottom: 10%;
 	text-align: center;
-	font-size: 36px;
 	color: ivory;
+	z-index: 1;
 }
 
-.paragraphimage {
-	width: 25%;
-	float: left;
-	padding: 2%;
+/* override user agent stylesheet */
+#navul {
+    display: block;
+    list-style-type: disc;
+    margin:auto;
 }
 
 #navmenu {
 	width: 100%;
-	height: 50px;
+	height: 5rem;
 }
 
 #navmenu li {
 	display: inline;
-	padding-left: 5px;
+	padding-left: 0px;
 }
 
+/* I have problems with the lines between links, solved on lesson with using float property */
+/* I have problems with the responsiveness of the links, below some vw last one goes down, solved with float property */
 .navlink {
-	display: inline-block;
-	width: 32%;
+	float: left;
+	width: 33.3%;
+	height: 3rem;
+	padding-top: 0.5rem;
 	text-align: center;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: black;
 	text-decoration: none;
-	padding-top: 10px;
 	border-right: 2px solid #000;
+	overflow: hidden;
+	box-sizing: border-box;
 }
 
-#formbox {
-	width: 95%;
-	border: 3px solid #000;
-	margin: 2.5%;
+/* Starts article */
+#articleheading {
+	margin-left: 2%;
+}
+
+.paragraphimage {
+	width: 22%;
+	float: left;
+	padding: 2% 1% 0 2%;
+}
+
+/* Tries initial letter rules */ 
+.longinfo::first-letter {
+	float: left;
+	font-size: 3em;
+	font-weight: 700;
+	color: rgb(245, 86, 86);
+	margin: 0.25em 0.1em 0.1em 0;
 }
 
 .longinfo {
-	margin: 2%;
-	margin-bottom: 8%;
-	margin-top: 5%;
+	margin: 2% 3% 3% 2%;
 	text-align: justify;
-	text-indent: 5%;
 	line-height: 1.5em;
 }
 
@@ -161,6 +185,14 @@ li {
 	margin-top: 5px;
 }
 
+/* starts contact form */
+#formbox {
+	width: 95%;
+	border: 3px solid #000;
+	box-sizing: border-box;
+	margin: 2.5%;
+}
+
 #contactheading {
 	margin: 2%;
 }
@@ -171,7 +203,8 @@ li {
 }
 
 #fullname, #youremail, #textbox, .formtitle {
-	width: 97%;
+	width: 98%;
+	box-sizing: border-box;
 	margin-top: 1%;
 	margin-bottom: 1%;
 	margin-left: 1%;
@@ -182,11 +215,21 @@ li {
 	background-color: lawngreen;
 	border-color: lightseagreen;
 	font-weight: 600;
+	width: 10%;
 }
 
-.formbutton:active {
+.formbutton:active, #resetbutton:active {
 	background-color: lightslategray;
 	border-color: darkslategray;
+}
+
+#formheader~input{
+	width: 1rem;
+}
+
+/* ERROR it is not recoloring the id. 0100 should override, reloading the page solved error */
+#resetbutton {
+	background-color: firebrick;
 }
 
 #copyright {
