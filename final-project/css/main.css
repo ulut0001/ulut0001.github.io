@@ -79,7 +79,7 @@ h3 {
     font-weight: 600;
 }
 
-h4, p, li, button {
+h4, p, li, button, label, input, textarea, td, th {
     font-size: 1.2rem;
     font-weight: 400;
 }
@@ -90,18 +90,19 @@ header {
     max-width: 1200px;
     width: 100%;
     background-color: #222;
-    padding: 1%;
 }
 
 #logobox {
     width: 98%;
     background-color: #c78c06;
+    margin: 0 1% 0 1%;
 }
 
 .nav li {
     text-align: center;
-    width: 100%;
-    margin: 20px;
+    width: 98%;
+    padding: 20px 0 20px 0;
+    margin: 0 1% 0 1%;
 }
 .nav li a {
     text-decoration: none;
@@ -110,7 +111,8 @@ header {
 }
 
 /* NEED TO SOLVE !!! couldn't find the state to make!!! */
-.nav li a::selection {
+.nav li:nth-child(1),
+.nav li:nth-child(1) a {
     background-color: #c78c06;
     color: #222;
 }
@@ -119,6 +121,7 @@ header {
     display: flex;
     width: 98%;
     height: 36px;
+    margin-left: calc(1% - 1px);
     border: 1px solid #c78c06;
 }
 
@@ -158,14 +161,17 @@ header {
     background-color: rgba(22,22,22,0.6);
     position: absolute;
     bottom: 13%;
-    width: 100%;
+    right: 0;
+    left: 0;
+    top: 13%;
+    width: 96%;
     padding: 5% 2% 2% 2%;
 }
 
 .maindivoverlay div {
     display: flex;
     flex-direction: row;
-    width: 36%;
+    width: max-content;
     padding: 3%;
     background-color: #c78c06;
     margin-top: 2%;
@@ -180,12 +186,12 @@ header {
 
 #about {
     background-color: #ffe6ac;
-    width: 100%;
+    width: 98%;
     padding: 1%;
 }
 
 #about img {
-    width: 98%;
+    width: 100%;
 }
 
 #about p {
@@ -195,10 +201,13 @@ header {
 
 /* Our services part styling */
 
+.outergridservice {
+    margin-top: 5%;
+}
+
 #services {
     display: grid;
-    grid-template-columns: 6;
-    margin-top: 4%;
+    grid-template-rows: repeat(6, 1fr);
     margin-bottom: 4%;
 }
 
@@ -217,17 +226,12 @@ header {
     margin: 2%;
 }
 
-/* !! button text wrapping!!SOLVE THIS */
-
 .servicebox button {
     display: flex;
     flex-direction: row;
-    flex-wrap: none;
     width: auto;
-    height: 10%;
     padding: 2%;
     background-color: #222;
-    margin-top: 2%;
     align-items: center;
     color: white;
     margin: 2%;
@@ -237,7 +241,7 @@ header {
 
 #vision {
     position: relative;
-    width: 100%;
+    width: 96%;
     background: gray url("../images/vision.jpg") no-repeat center center;
     background-size: cover;
     color: white;
@@ -247,9 +251,7 @@ header {
 #vision button {
     display: flex;
     flex-direction: row;
-    flex-wrap: none;
     width: auto;
-    height: 10%;
     padding: 2%;
     background-color: #222;
     margin-top: 2%;
@@ -262,6 +264,7 @@ header {
 #team {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2%;
 }
 
 #team div {
@@ -286,6 +289,8 @@ header {
 
 /* Contact part Styling */
 
+#contact h2,
+#contact h3,
 #contact input,
 #contact label,
 #contact textarea {
@@ -297,4 +302,39 @@ header {
     color: #c78c06;
     background-color: #222;
     margin-left: 2%;
+}
+
+/* hours of operation table styling */
+
+table {
+    width: 100%;
+}
+
+th {
+    border: 1px solid black;
+    background-color: #ffe6ac;
+    justify-self: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+td {
+    border: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1%;
+}
+
+/* Location styling */ 
+
+#map iframe {
+    margin-top: 3%;
+    width: 100%;
+    height: 300px;
+}
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 1%;
 }
