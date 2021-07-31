@@ -39,7 +39,6 @@
 <!-- Welcome to the star media -->
 
     <div class="welcome">
-        <img src="images/main-banner.jpg" alt="Welcome" id="mainbanner">
         <div class="maindivoverlay">
                 <h1>Welcome to the Three Star Media</h1>
                 <p>
@@ -55,9 +54,11 @@
 
     <div id="about">
         <img src="images/about-us.jpg" alt="three star media workplace with a tabletennis">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores perferendis ea doloremque iusto magni. Amet pariatur aut repudiandae id rerum cupiditate iste doloremque laborum ut, eaque ratione sint debitis aperiam.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vitae quod temporibus possimus accusamus blanditiis deleniti ea dolorum inventore eum praesentium dignissimos eveniet distinctio, nesciunt ex ab animi minus quidem.</p>
+        <div>
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores perferendis ea doloremque iusto magni. Amet pariatur aut repudiandae id rerum cupiditate iste doloremque laborum ut, eaque ratione sint debitis aperiam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vitae quod temporibus possimus accusamus blanditiis deleniti ea dolorum inventore eum praesentium dignissimos eveniet distinctio, nesciunt ex ab animi minus quidem.</p>
+        </div>
     </div>
 
     <!-- Services part preparation for grid -->
@@ -109,19 +110,19 @@
 
     <div id="team">
         <h2>Our Team</h2>
-        <div>
+        <div id="johnpic">
             <img src="images/john.jpg" alt="photo of john doe">
         </div>
-        <div>
+        <div id="johnbox">
             <h3>John Doe</h3>
             <h4>CEO &amp; Co-Owner</h4>
             <hr>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime dolores itaque qui commodi illo, eveniet rerum tenetur atque, magnam quam quis optio, voluptatem aut modi impedit consequatur. Error, tempore ad?</p>
         </div>
-        <div>
+        <div id="bobpic">
             <img src="images/bob.jpg" alt="photo of bob rite">
         </div>
-        <div>
+        <div id="bobbox">
             <h3>Bob Rite</h3>
             <h4>CFO &amp; Co-Owner</h4>
             <hr>
@@ -133,29 +134,31 @@
     
     <div id="contact">
         <h2>Contact Us</h2>
-        <h3>Send us a message</h3>
-        <form action="contact.html" method="GET">
-            <div>
-                <label for="fullname" class="formtitle">Your Name</label>
-                <input type="text" id="fullname" name="fullname" placeholder="Your Name">
-            </div>
-            <div>
-                <label for="youremail" class="formtitle">Email</label>
-                <input type="email" name="email" id="youremail" placeholder="name@starmail.com">
-            </div>
-            <div>
-                <label for="textbox" class="formtitle">Your Message</label>
-                <textarea name="textbox" id="textbox" cols="30" rows="10">I would like to ask about...</textarea>
-            </div>
-            <div>
-                <button type="submit" class="formbutton">Send</button>
-                <button type="reset" class="formbutton" id="resetbutton">Reset</button>
-            </div>
-        </form>
-        
+        <div id="directcomm">
+            <h3>Send us a message</h3>
+            <form action="contact.html" method="GET">
+                <div>
+                    <label for="fullname" class="formtitle">Your Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Your Name">
+                </div>
+                <div>
+                    <label for="youremail" class="formtitle">Email</label>
+                    <input type="email" name="email" id="youremail" placeholder="name@starmail.com">
+                </div>
+                <div>
+                    <label for="textbox" class="formtitle">Your Message</label>
+                    <textarea name="textbox" id="textbox" cols="30" rows="10">I would like to ask about...</textarea>
+                </div>
+                <div>
+                    <button type="submit" class="formbutton">Send</button>
+                    <button type="reset" class="formbutton" id="resetbutton">Reset</button>
+                </div>
+            </form>
+        </div>
+
         <!-- Hours of operation table -->
         
-        <section>
+        <section id="ophours">
             <h3>Hours of operation</h3>
             <table>
                 <thead>
@@ -177,6 +180,7 @@
             </table>
         </section>
         <div id="map">
+                <h3>Location</h3>
                 <!-- Google Map Code for Algonquin College-->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.7034472775356!2d-75.75450404322515!3d45.34949647057744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccdff1901417587%3A0x58ec13b8b3c76fb3!2sAlgonquin%20College!5e0!3m2!1sen!2sca!4v1627066244283!5m2!1sen!2sca" allowfullscreen="" loading="lazy"></iframe>
         </div>
