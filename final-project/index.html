@@ -2,6 +2,9 @@
 <html lang="zxx">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -10,9 +13,9 @@
 
 <body>
 
-    <!-- Header for logo, navigation links, about box-->
+    <!-- Header for logo, navigation links -->
     
-    <div class="headbox">
+    <header>
         <div id="logobox">
             <img src="images/logo.png" alt="">
         </div>
@@ -23,30 +26,38 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li>
-                    <input type="text" placeholder="Search..">
-                    <button type="submit" class="submitbutton">
-                        <svg xmlns="http://www.w3.org/2000/svg" id="searchlogo"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                    </button>
-                </li>
             </ul>
+            <div id="searchbar">
+                <input type="text" placeholder="Search..">
+                <button type="submit" class="submitbutton">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="searchlogo"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                </button>
+            </div>
         </div>
-        <div class="welcome">
-            <img src="images/main-banner.jpg" alt="Welcome">
+    </header>
+
+<!-- Welcome to the star media -->
+
+    <div class="welcome">
+            <img src="images/main-banner.jpg" alt="Welcome" id="mainbanner">
             <div class="maindivoverlay">
                 <h1>Welcome to the Three Star Media</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error expedita, repellat voluptatem excepturi illo at quod. Minus atque ipsam facere dolore rem ipsa possimus, quasi labore nam, deleniti exercitationem impedit.
                 </p>
-                <button>Connect with us!</button>
+            <div>
+                <h3><a href="#contact">Connect with us!</a></h3> <img src="images/outline_arrow_right_black_24dpbig.png" alt="arrow">
             </div>
         </div>
-        <div id="about">
-            <img src="images/about-us.jpg" alt="three star media workplace with a tabletennis">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores perferendis ea doloremque iusto magni. Amet pariatur aut repudiandae id rerum cupiditate iste doloremque laborum ut, eaque ratione sint debitis aperiam.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vitae quod temporibus possimus accusamus blanditiis deleniti ea dolorum inventore eum praesentium dignissimos eveniet distinctio, nesciunt ex ab animi minus quidem.</p>
-        </div>
+    </div>
+
+<!-- About Us Part Starts -->
+
+    <div id="about">
+        <img src="images/about-us.jpg" alt="three star media workplace with a tabletennis">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores perferendis ea doloremque iusto magni. Amet pariatur aut repudiandae id rerum cupiditate iste doloremque laborum ut, eaque ratione sint debitis aperiam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas vitae quod temporibus possimus accusamus blanditiis deleniti ea dolorum inventore eum praesentium dignissimos eveniet distinctio, nesciunt ex ab animi minus quidem.</p>
     </div>
 
     <!-- Services part preparation for grid -->
@@ -55,40 +66,40 @@
         <h2>Our Services</h2>
         <div id="dtransform" class="servicebox">
             <img src="images/digital.jpg" alt="three star media digital transformation">
-            <h3>Digital Transform</h3>
+            <h3>Digital transformation</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea corrupti, odit ipsa sed voluptates dicta temporibus maxime esse debitis dolor nemo, animi consequatur accusantium ducimus iure voluptate quia? Ipsam, repudiandae.</p>
-            <button class="indetailbtn">Digital Plans <img src="images/outline_arrow_right_white_24dpbig.png" alt="white arrow" class="whitearrow"></button>
+            <button class="indetailbtn">Digital Plans <img src="images/outline_arrow_right_white_24dp.png" alt="white arrow" class="whitearrow"></button>
         </div>
         <div id="marketing" class="servicebox">
             <img src="images/marketing.jpg" alt="three star media marketing service">
             <h3>Marketing</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cumque, dolor iusto nostrum ex ullam animi impedit, itaque repudiandae debitis repellat dolorum quia aliquam. Laboriosam ea non expedita iste laborum?</p>
-            <button class="indetailbtn">Marketing Plans <img src="images/outline_arrow_right_white_24dpbig.png" alt="white arrow" class="whitearrow"></button>
+            <button class="indetailbtn">Marketing Plans <img src="images/outline_arrow_right_white_24dp.png" alt="white arrow" class="whitearrow"></button>
         </div>
         <div id="vprod" class="servicebox">
             <img src="images/video.jpg" alt="three star media video production">
             <h3>Video Production</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores numquam eveniet suscipit reiciendis ipsum nostrum qui porro asperiores, quo doloribus? Possimus illo sequi aperiam unde ipsum dignissimos placeat consequatur tempore!</p>
-            <button class="indetailbtn">Video Plans <img src="images/outline_arrow_right_white_24dpbig.png" alt="white arrow" class="whitearrow"></button>
+            <button class="indetailbtn">Video Plans <img src="images/outline_arrow_right_white_24dp.png" alt="white arrow" class="whitearrow"></button>
         </div>
         <div id="webd" class="servicebox">
             <img src="images/web.jpg" alt="three star media web development and design">
             <h3>Web Development</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates unde aut a, vero sint dolorum sequi repellat, soluta vitae cupiditate magni iste perferendis illum tenetur, magnam inventore dignissimos? Quis, sapiente.</p>
-            <button class="indetailbtn">Web Plans <img src="images/outline_arrow_right_white_24dpbig.png" alt="white arrow" class="whitearrow"></button>
+            <button class="indetailbtn">Web Plans <img src="images/outline_arrow_right_white_24dp.png" alt="white arrow" class="whitearrow"></button>
         </div>
         <div id="printing" class="servicebox">
             <img src="images/print.jpg" alt="three star media printing services">
             <h3>Print</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sequi? Minima asperiores, modi exercitationem magnam qui voluptatem dolores error, vel voluptas autem possimus labore itaque voluptates veritatis placeat unde inventore.</p>
-            <button class="indetailbtn">Print Plans <img src="images/outline_arrow_right_white_24dpbig.png" alt="white arrow" class="whitearrow"></button>
+            <button class="indetailbtn">Print Plans <img src="images/outline_arrow_right_white_24dp.png" alt="white arrow" class="whitearrow"></button>
         </div>
     </div>
     <div id="vision">
         <img src="images/vision.jpg" alt="three star media our vision">
         <h3>Our Vision</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis cum quae nulla, perspiciatis mollitia neque officia fugiat architecto exercitationem officiis? Tenetur accusantium necessitatibus quas atque temporibus animi sequi voluptatem voluptatibus?</p>
-        <Button class="indetailbtn">Learn more <img src="images/outline_arrow_right_white_24dpbig.png" alt="white arrow" class="whitearrow"></Button>
+        <Button class="indetailbtn">Learn more <img src="images/outline_arrow_right_white_24dp.png" alt="white arrow" class="whitearrow"></Button>
     </div>
     <div id="team">
         <h2>Our Team</h2>
