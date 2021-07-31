@@ -66,12 +66,12 @@ body {
 
 h1 {
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 h2 {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 h3 {
@@ -166,6 +166,7 @@ header {
 }
 
 .maindivoverlay div {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     width: max-content;
@@ -313,6 +314,7 @@ th {
     justify-self: center;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-weight: 700;
 }
 
 td {
@@ -432,6 +434,15 @@ footer {
     .servicebox button {
         width: 96%;
         height: 70px;
+    }
+
+    /* Vision padding change */
+
+    #vision {
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     /* Grid change to team */
