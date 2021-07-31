@@ -1,0 +1,300 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* End of CSS Reset Code */
+
+/* Colours values used in the layout 
+#c78c06 for orange, 
+#ffe6ac light coral, 
+#222 dark grey and white */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1200px;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+h4, p, li, button {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Header with links and search */
+
+header {
+    max-width: 1200px;
+    width: 100%;
+    background-color: #222;
+    padding: 1%;
+}
+
+#logobox {
+    width: 98%;
+    background-color: #c78c06;
+}
+
+.nav li {
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+}
+.nav li a {
+    text-decoration: none;
+    color: #c78c06;
+    width: 100%;
+}
+
+/* NEED TO SOLVE !!! couldn't find the state to make!!! */
+.nav li a::selection {
+    background-color: #c78c06;
+    color: #222;
+}
+
+#searchbar {
+    display: flex;
+    width: 98%;
+    height: 36px;
+    border: 1px solid #c78c06;
+}
+
+#searchbar input {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#searchbar button {
+    align-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 3px;
+    background-color: #222;
+}
+
+#searchlogo {
+    width: 24px;
+    height: 24px;
+    fill: #c78c06;
+}
+
+/* Welcome Part styling */
+
+.welcome {
+    position: relative;
+    width: 100%;
+    color: white;
+}
+
+#mainbanner {
+    width: 100%;
+}
+
+.maindivoverlay {
+    background-color: rgba(22,22,22,0.6);
+    position: absolute;
+    bottom: 13%;
+    width: 100%;
+    padding: 5% 2% 2% 2%;
+}
+
+.maindivoverlay div {
+    display: flex;
+    flex-direction: row;
+    width: 36%;
+    padding: 3%;
+    background-color: #c78c06;
+    margin-top: 2%;
+    align-items: center;
+}
+
+.maindivoverlay div h3 a {
+    color: #222;
+}
+
+/* about us part style */
+
+#about {
+    background-color: #ffe6ac;
+    width: 100%;
+    padding: 1%;
+}
+
+#about img {
+    width: 98%;
+}
+
+#about p {
+    padding-right: 1%;
+    padding-bottom: 3%;
+}
+
+/* Our services part styling */
+
+#services {
+    display: grid;
+    grid-template-columns: 6;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.servicebox {
+    background-color: #ffe6ac;
+    width: 100%;
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+
+.serviceimg {
+    width: 100%;
+}
+
+.servicebox h3, .servicebox p {
+    margin: 2%;
+}
+
+/* !! button text wrapping!!SOLVE THIS */
+
+.servicebox button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    width: auto;
+    height: 10%;
+    padding: 2%;
+    background-color: #222;
+    margin-top: 2%;
+    align-items: center;
+    color: white;
+    margin: 2%;
+}
+
+/* Vision part styling */
+
+#vision {
+    position: relative;
+    width: 100%;
+    background: gray url("../images/vision.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 2%;
+}
+
+#vision button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    width: auto;
+    height: 10%;
+    padding: 2%;
+    background-color: #222;
+    margin-top: 2%;
+    align-items: center;
+    color: white;
+}
+
+/* Team part styling */
+
+#team {
+    display: flex;
+    flex-direction: column;
+}
+
+#team div {
+    background-color: #ffe6ac;
+    width: 100%;
+}
+
+#team img {
+    width: 100%;
+}
+
+#team hr {
+    width: 96%;
+    border-color: #c78c06;
+}
+
+#team h3,
+#team h4,
+#team p {
+    margin: 2%;
+}
+
+/* Contact part Styling */
+
+#contact input,
+#contact label,
+#contact textarea {
+    width: 96%;
+    margin: 1% 2% 2% 2%;
+}
+
+.formbutton {
+    color: #c78c06;
+    background-color: #222;
+    margin-left: 2%;
+}
