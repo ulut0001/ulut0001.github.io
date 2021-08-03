@@ -90,6 +90,7 @@ h4, p, li, button, label, input, textarea, td, th, a {
     font-weight: 400;
 }
 
+
 /* Header with links and search */
 
 
@@ -160,7 +161,7 @@ header {
 .welcome {
     width: 100%;
     color: white;
-    background: gray url("../images/main-banner.jpg") no-repeat center center;
+    background: #222 url("../images/main-banner.jpg") repeat center center;
     padding-top: 10%;
     padding-bottom: 10%;
 }
@@ -171,20 +172,19 @@ header {
     padding: 5% 2% 2% 2%;
 }
 
-.maindivoverlay div {
+.maindivoverlay a {
     box-sizing: border-box;
+    border: 2px inset #ffe6ac;
+    width: max-content;
     display: flex;
     flex-direction: row;
-    width: max-content;
-    padding: 3%;
+    padding: 2%;
     background-color: #c78c06;
-    margin-top: 2%;
     align-items: center;
-}
-
-.maindivoverlay div h3 a {
+    margin: 2% 2% auto 0;
     color: #222;
 }
+
 
 /* about us part style */
 
@@ -230,18 +230,27 @@ header {
     margin: 2%;
 }
 
-.indetailbtn,
-.invisionbtn {
+.inbtn {
     box-sizing: border-box;
-    border: 2px inset white;
+    border: 2px inset whitesmoke;
     width: max-content;
     display: flex;
     flex-direction: row;
     padding: 2%;
     background-color: #222;
     align-items: center;
-    color: white;
+}
+
+.detail {
     margin: 2% 2% auto 2%;
+}
+
+.vision {
+    margin: 2% 2% auto 0;
+}
+
+#services a {
+    color: white;
 }
 
 /* Vision part styling */
@@ -435,6 +444,11 @@ footer {
         width: 100%;
     }
 
+    .servicebox {
+        display: flex;
+        flex-direction: column;
+    }
+
     #services {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 1fr 0.6fr;
@@ -464,9 +478,12 @@ footer {
 
     /* HOW to stick the button to bottom ??? */
 
-    .indetailbtn {
+    .detail {
         width: 96%;
         height: 70px;
+        align-self: flex-end;
+        margin-top: auto;
+        margin-bottom: 0;
     }
 
     /* Vision padding change */
