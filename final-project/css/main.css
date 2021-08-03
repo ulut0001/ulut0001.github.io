@@ -90,6 +90,10 @@ h4, p, li, button, label, input, textarea, td, th, a {
     font-weight: 400;
 }
 
+i::before {
+    font-size: 0.8rem;
+}
+
 
 /* Header with links and search */
 
@@ -176,8 +180,7 @@ header {
     box-sizing: border-box;
     border: 2px inset #ffe6ac;
     width: max-content;
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
     padding: 2%;
     background-color: #c78c06;
     align-items: center;
@@ -234,8 +237,7 @@ header {
     box-sizing: border-box;
     border: 2px inset whitesmoke;
     width: max-content;
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
     padding: 2%;
     background-color: #222;
     align-items: center;
