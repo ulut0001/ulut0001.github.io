@@ -51,6 +51,13 @@ a {
     text-decoration: none;
 }
 
+a,
+a:link,
+a:visited {
+  color: inherit;
+}
+
+
 /* End of CSS Reset Code */
 
 /* Colours values used in the layout 
@@ -78,7 +85,7 @@ h3 {
     font-weight: 600;
 }
 
-h4, p, li, button, label, input, textarea, td, th {
+h4, p, li, button, label, input, textarea, td, th, a {
     font-size: 1rem;
     font-weight: 400;
 }
@@ -223,15 +230,18 @@ header {
     margin: 2%;
 }
 
-.servicebox button {
+.indetailbtn,
+.invisionbtn {
+    box-sizing: border-box;
+    border: 2px inset white;
+    width: max-content;
     display: flex;
     flex-direction: row;
-    width: auto;
     padding: 2%;
     background-color: #222;
     align-items: center;
     color: white;
-    margin: 2%;
+    margin: 2% 2% auto 2%;
 }
 
 /* Vision part styling */
@@ -454,7 +464,7 @@ footer {
 
     /* HOW to stick the button to bottom ??? */
 
-    .servicebox button {
+    .indetailbtn {
         width: 96%;
         height: 70px;
     }
